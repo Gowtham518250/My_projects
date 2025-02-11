@@ -1,1 +1,7 @@
-The project  Was about covide infetced or not prdiction
+This project focuses on classifying chest X-ray images into three categories: COVID-19, Normal, and Viral Pneumonia. Using TensorFlow and Keras, a Convolutional Neural Network (CNN) was designed to process and analyze medical images. The dataset was loaded from a directory, resized to 128x128 pixels, and normalized to scale pixel values between 0 and 1. Labels were encoded using One-Hot Encoding to prepare the data for training.  
+
+The model architecture includes four convolutional layers with ReLU activation, batch normalization, max pooling, and dropout layers to prevent overfitting. After the convolutional layers, fully connected dense layers process the extracted features before passing them to a softmax output layer for classification.  
+
+The model was trained for 100 epochs using the Adam optimizer and categorical cross-entropy loss function. Throughout training, accuracy and validation loss were monitored. The results showed a significant improvement in training accuracy, reaching a final validation accuracy of 92.42%. However, fluctuations in validation loss suggest potential overfitting.  
+
+To enhance model performance, future improvements could include data augmentation, hyperparameter tuning, and incorporating pre-trained models like ResNet or VGG16 for transfer learning. The project provides a strong foundation for automated medical image classification and can be further optimized for real-world applications.
